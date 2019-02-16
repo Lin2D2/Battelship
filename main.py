@@ -27,6 +27,7 @@ class main:
     Game_Mode = Mode()
 
 class Options:
+    pass
 
 
 class Ships:
