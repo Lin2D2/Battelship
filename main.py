@@ -1,5 +1,13 @@
+import kivy
+kivy.require("1.10.1")
+from kivy.app import App
+from kivy.uix.widget import Widget
 
 
+class CustomWidgetApp(App):
+
+    def build(self):
+        return CustomWidget()
 
 class main:
     def Size():
@@ -38,7 +46,9 @@ class Ships:
 
     Ship_ammount()
 
+Tile = CustomWidgetApp()
 main_main = main()
 main_Ships = Ships()
 
+Tile.run()
 print("Ende")
