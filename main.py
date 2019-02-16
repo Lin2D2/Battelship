@@ -14,7 +14,7 @@ class main:
         global Tile_Size
         Tile_Size = 0
         while not(Tile_Size) in (range(7, 11)):
-            Tile_Size = int(input("wählen sie eine Spielfeld Größe von 7-10:"))
+            Tile_Size = int(input("waehlen sie eine Spielfeld Groesse von 7-10:"))
         return Tile_Size
 
     def Mode():
