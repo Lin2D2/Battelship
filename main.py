@@ -1,20 +1,24 @@
 import kivy
 kivy.require("1.10.1")
+
 from kivy.app import App
 from kivy.uix.widget import Widget
 
+class CustomTile(Widget):
+    pass
 
-class CustomWidgetApp(App):
+class CustomTileApp(App):
 
     def build(self):
-        return CustomWidget()
+        return CustomTile()
+
 
 class main:
     def Size():
         global Tile_Size
         Tile_Size = 0
         while not(Tile_Size) in (range(7, 11)):
-            Tile_Size = int(input("waehlen sie eine Spielfeld Groesse von 7-10:"))
+            Tile_Size = int(input("wählen sie eine Spielfeld Grösse von 7-10:"))
         return Tile_Size
 
     def Mode():
@@ -47,9 +51,9 @@ class Ships:
 
     Ship_ammount()
 
-Tile = CustomWidgetApp()
+customtile = CustomTileApp()
 main_main = main()
 main_Ships = Ships()
 
-Tile.run()
+customtile.run()
 print("Ende")
